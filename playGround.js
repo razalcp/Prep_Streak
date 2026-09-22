@@ -36,8 +36,86 @@
 // console.log(`The sum is ${a+b}`);
 
 //tagged template
-function tag(string,...values){
-    console.log(string);
-    console.log(values);
-    
-}
+// function tag(string, ...values) {
+//     console.log(string);
+//     console.log(values);
+
+// }
+
+// tag`My name is ${'John'} and i am ${25} years of old `
+
+//spread
+// const arr1=[1,2,3]
+// const arr2=[4,5,6]
+
+// const [a,b,c]=arr1
+// console.log(a,b,c);
+// without spread 
+// console.log([arr1,arr2]);
+
+// console.log(...arr1);
+
+// function add(...d){
+//     console.log(d);
+
+//     return d.reduce((acc,curr)=>{
+//         return acc=acc+curr
+//     },acc=0)
+// }
+// let numbers=[1,2,3,5,6]
+
+// console.log(add(...numbers));
+
+
+//shallow copy
+
+//first understand this if we assign an non-primitive like object or array to another variable, the other varible holds the reference
+
+// const a = {
+//     name: "Razal",
+//     age: 25
+// }
+// varible a does not contain the object itself , it contains the refernce of the object,
+//So when you assign it to another variable since a contains the reference the reference of the object is copied.
+
+// const b = a
+// b.age = 31
+// console.log(a)
+// console.log(b);
+
+// const copy={...a}
+
+// copy.age=100
+
+// console.log(a);
+// console.log(copy);
+
+
+const user = {
+    name: "Razal",
+    age: 25,
+    address: {
+        city: "Kozhikode",
+        country: "India"
+    }
+};
+
+const user2 = { ...user }
+
+console.log(user === user2);
+console.log(user == user2);
+console.log(user.address === user2.address);
+
+user2.address.city = "Kochi"
+
+console.log(user.address.city);
+console.log(user.address.city);
+
+
+
+
+
+
+
+
+
