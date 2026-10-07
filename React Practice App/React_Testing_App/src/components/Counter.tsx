@@ -1,7 +1,7 @@
 import { useState } from "react"
 import IncrementButton from "./IncrementButton"
 import DecrementButton from "./DecrementButton"
-import FruitsList from "./FruitsList"
+// import FruitsList from "./FruitsList"
 
 const Counter = () => {
     const [count, setCount] = useState(0)
@@ -39,4 +39,5 @@ const Counter = () => {
     )
 }
 
-export default Counter
+export default Counter;
+
