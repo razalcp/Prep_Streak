@@ -4,6 +4,7 @@ import './App.css'
 import FormUncontrolledComponent from './components/ControlledComponent/FormUncontrolledCpmponent'
 // import Counter from './components/Counter'
 import { createContext, useState } from 'react'
+import WidthComponent from './components/useEffect_vs_useLayout_Effect/WidthComponent'
 
 
 export const UserContext = createContext()
@@ -14,9 +15,11 @@ function App() {
     <>
       {/* <Counter /> */}
       {/* <FormControlledComponent /> */}
-      <UserContext.Provider value={{ user, setUser }}>
-        <FormUncontrolledComponent />
-      </UserContext.Provider>
+      {/* <UserContext.Provider value={{ user, setUser }}> */}
+        {/* <FormUncontrolledComponent /> */}
+      {/* </UserContext.Provider> */}
+
+      <WidthComponent/>
     </>
   );
 
