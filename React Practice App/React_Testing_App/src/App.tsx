@@ -5,6 +5,12 @@ import FormUncontrolledComponent from './components/ControlledComponent/FormUnco
 // import Counter from './components/Counter'
 import { createContext, useState } from 'react'
 import WidthComponent from './components/useEffect_vs_useLayout_Effect/WidthComponent'
+import Counter from './components/dependancyArray/Counter'
+import { Users } from './components/dependancyArray/Users'
+import { Focus } from './components/Focus'
+import Counter1 from './components/example_UseCallback/Counter1'
+import { Factorial } from './components/example_useMemo/Factorial'
+import { Counter_useReducer } from './components/example_useReducer/Counter_useReducer'
 
 
 export const UserContext = createContext()
@@ -16,10 +22,18 @@ function App() {
       {/* <Counter /> */}
       {/* <FormControlledComponent /> */}
       {/* <UserContext.Provider value={{ user, setUser }}> */}
-        {/* <FormUncontrolledComponent /> */}
+      {/* <FormUncontrolledComponent /> */}
       {/* </UserContext.Provider> */}
 
-      <WidthComponent/>
+      {/* <WidthComponent/> */}
+      {/* <Counter/> */}
+      {/* <Users/> */}
+      {/* <Focus /> */}
+
+      {/* <Counter1/> */}
+      {/* <Factorial/> */}
+
+      <Counter_useReducer />
     </>
   );
 

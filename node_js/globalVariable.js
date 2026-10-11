@@ -1,0 +1,1 @@
+global.myVariable = 22;
